@@ -1,0 +1,138 @@
+// 数据检索
+.dataretrievalIndex {
+	background-color: #f5faf9;
+	display: flex;
+	.classify {
+		width: 15.75vw;
+		background-color: #ffffff;
+		border-right: 0.052vw solid #dddddd;
+		// height: 53.125vw;
+		height:inherit;
+		nav {
+			width: 15.625vw;
+			height: 2.5vw;
+			line-height: 2.5vw;
+			border-bottom: 0.052vw solid #dddddd;
+			text-align: center;
+			font-family: 'NotoSansHans-Bold';
+			font-size: 0.833vw;
+			font-weight: normal;
+			font-stretch: normal;
+			letter-spacing: 0vw;
+			color: #00806f;
+		}
+		section {
+			height: 21.458vw;
+			overflow-y: scroll;
+			&::-webkit-scrollbar {
+				z-index: 1;
+				height: 2.76vw;
+			}
+			&::-webkit-scrollbar-thumb {
+				width: 0.417vw;
+				height: 2.76vw;
+				background-color: #a1dad2;
+				border-radius: 0.208vw;
+			}
+		}
+	}
+	.content {
+		padding-top: 0.833vw;
+		padding-left: 0.833vw;
+		nav {
+			padding-left: 0.469vw;
+			margin-top: 1.25vw;
+			height: 0.729vw;
+			font-family: 'NotoSansHans-Regular';
+			font-size: 0.729vw;
+			font-weight: normal;
+			font-stretch: normal;
+			letter-spacing: 0vw;
+			color: #333333;
+		}
+		.box {
+			width: 65.104vw;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			.top {
+				margin-top: 1.302vw;
+				margin-bottom: 0.885vw;
+				width: 65.104vw;
+				height: 43.333vw;
+				background-color: #ffffff;
+				box-shadow: 0vw 0.104vw 0.313vw 0vw rgba(0, 0, 0, 0.1);
+				border-radius: 0.417vw;
+				padding-left: 1.354vw;
+				.list {
+					width: 62.5vw;
+					height: 4.948vw;
+					margin-top: 1.25vw;
+					display: flex;
+					&:hover{
+						cursor: pointer;
+						background-color: #f8f6f6;
+					}
+					.left {
+						text-align: start;
+						width: 2.188vw;
+						height: 4.948vw;
+						font-family: 'NotoSansHans-Regular';
+						font-size: 0.938vw;
+						font-weight: normal;
+						font-stretch: normal;
+						letter-spacing: 0vw;
+					}
+					.right {
+						border-bottom: 0.052vw solid #e6f5f3;
+						width: 60.313vw;
+						height: 4.948vw;
+						display: flex;
+						.isimg {
+							width: 3.646vw;
+							height: 3.646vw;
+							background-color: #f5f5f5;
+							border-radius: 0.104vw;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							img {
+								width: 1.823vw;
+								height: 2.083vw;
+							}
+						}
+						.txt {
+							width: 100%;
+							margin-left: 2.448vw;
+							.title {
+								font-family: 'NotoSansHans-Bold';
+								font-size: 0.938vw;
+								font-weight: normal;
+								font-stretch: normal;
+								letter-spacing: 0vw;
+								color: #0065c3;
+								text-align: start;
+								display: inline-block;
+								&:hover{
+									color: #3196f5;
+									text-decoration: underline;
+								}
+							}
+							.tag {
+								justify-content: space-between;
+								padding-right: 1.771vw;
+								font-family: 'NotoSansHans-Regular';
+								font-size: 0.729vw;
+								font-weight: normal;
+								font-stretch: normal;
+								letter-spacing: 0vw;
+								display: flex;
+								margin-top: 1.354vw;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
