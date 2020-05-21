@@ -1,0 +1,257 @@
+// 文档检索
+.docretrievalIndex {
+	background-color: #f5faf9;
+	display: flex;
+	.classify {
+		width: 15.75vw;
+		background-color: #ffffff;
+		border-right: 0.052vw solid #dddddd;
+		// height: 53.125vw;
+		height: inherit;
+		nav {
+			width: 15.625vw;
+			height: 2.5vw;
+			line-height: 2.5vw;
+			border-bottom: 0.052vw solid #dddddd;
+			text-align: center;
+			font-family: 'NotoSansHans-Bold';
+			font-size: 0.833vw;
+			font-weight: normal;
+			font-stretch: normal;
+			letter-spacing: 0vw;
+			color: #00806f;
+		}
+		section {
+			height: 21.458vw;
+			overflow-y: scroll;
+			&::-webkit-scrollbar {
+				z-index: 1;
+				height: 2.76vw;
+			}
+			&::-webkit-scrollbar-thumb {
+				width: 0.417vw;
+				height: 2.76vw;
+				background-color: #a1dad2;
+				border-radius: 0.208vw;
+			}
+		}
+	}
+	.content {
+		padding-top: 0.729vw;
+		padding-left: 0.781vw;
+		display: flex;
+		justify-content: space-between;
+		width: 82.396vw;
+		.content-left {
+			.catalogue {
+				margin-top: 1.094vw;
+				width: 65.156vw;
+				height: 4.688vw;
+				background-color: #f5faf9;
+				border-radius: 0.104vw;
+				border: solid 0.052vw #97ccc5;
+				padding: 0vw 0vw 0vw 1.563vw;
+				.box {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					div {
+						margin-top: 0.8vw;
+						margin-right: 1.823vw;
+						font-family: 'NotoSansHans-Regular';
+						font-size: 0.729vw;
+						font-weight: normal;
+						font-stretch: normal;
+						letter-spacing: 0vw;
+
+						&:hover {
+							cursor: pointer;
+							span {
+								&:nth-child(1) {
+									text-decoration: underline;
+									color: #0065c3;
+								}
+							}
+						}
+					}
+					.more {
+						&:hover {
+							cursor: pointer;
+							text-decoration: underline;
+							color: #0065c3;
+						}
+					}
+				}
+			}
+			.result-hint {
+				font-family: 'NotoSansHans-Regular';
+				font-size: 0.729vw;
+				font-weight: normal;
+				font-stretch: normal;
+				letter-spacing: 0vw;
+				color: #333333;
+				margin-left: 0.469vw;
+				margin-top: 1.25vw;
+			}
+			.pagesbox {
+				margin-top: 1.949vw;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				.box {
+					width: 65.104vw;
+					height: 37.188vw;
+					background-color: #ffffff;
+					box-shadow: 0vw 0.104vw 0.313vw 0vw rgba(0, 0, 0, 0.1);
+					border-radius: 0.417vw;
+					margin-bottom: 0.833vw;
+					padding-left: 1.354vw;
+					padding-top: 1.198vw;
+					.list {
+						width: 62.5vw;
+						height: 10.677vw;
+						margin-bottom: 1.25vw;
+
+						.txt {
+							margin-top: 1.302vw;
+							font-size: 20px;
+							margin-left: 24px;
+							border-bottom: 0.052vw solid #e6f5f3;
+							padding-bottom: 1.354vw;
+							.message {
+								font-family: 'NotoSansHans-Regular';
+								font-size: 0.729vw;
+								font-weight: normal;
+								font-stretch: normal;
+								letter-spacing: 0vw;
+								color: #333333;
+								display: flex;
+								justify-content: space-between;
+								.left {
+									display: flex;
+								}
+							}
+							.abstract {
+								margin-top: 0.938vw;
+								padding-right: 0.677vw;
+								font-family: 'NotoSansHans-Regular';
+								font-size: 0.729vw;
+								font-weight: normal;
+								font-stretch: normal;
+								line-height: 0.938vw;
+								letter-spacing: 0vw;
+								color: #1a1a1a;
+								span {
+									color: #ff8c26;
+								}
+							}
+							.tag {
+								display: flex;
+								margin-top: 0.833vw;
+								font-family: 'NotoSansHans-Regular';
+								font-size: 0.729vw;
+								font-weight: normal;
+								font-stretch: normal;
+								letter-spacing: 0vw;
+								color: #666666;
+								div {
+									margin-right: 0.99vw;
+								}
+							}
+							.handle {
+								margin-top: 0.885vw;
+								display: flex;
+								justify-content: space-between;
+								font-family: 'NotoSansHans-Regular';
+								font-size: 0.729vw;
+								font-weight: normal;
+								font-stretch: normal;
+								letter-spacing: 0vw;
+								.left {
+									display: flex;
+									div {
+										margin-right: 0.417vw;
+										height: 1.25vw;
+										background-color: #ffffff;
+										border-radius: 0.104vw;
+										border: solid 0.052vw #a1dad2;
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										padding-left: 0.417vw;
+										padding-right: 0.417vw;
+										img {
+											width: 0.729vw;
+											height: 0.729vw;
+											margin-right: 0.313vw;
+										}
+										span {
+											color: #009985;
+										}
+									}
+								}
+								.right {
+									display: flex;
+									justify-content: space-between;
+									width: 5.938vw;
+									color: #666666;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.content-right {
+			margin-left: 0.833vw;
+			margin-top: 2.813vw;
+			padding-left: 0.781vw;
+			.box {
+				nav {
+					font-family: 'NotoSansHans-Bold';
+					font-size: 0.833vw;
+					font-weight: normal;
+					font-stretch: normal;
+					letter-spacing: 0vw;
+					color: #009985;
+				}
+				&:nth-child(1) {
+					width: 14.74vw;
+					height: 16vw;
+					section {
+						margin-top: 1.25vw;
+						width: 14.427vw;
+						height: 16vw;
+					}
+				}
+				&:nth-child(2) {
+					margin-top: 2.5vw;
+					width: 14.74vw;
+					height: 11.406vw;
+					section {
+						margin-top: 1.354vw;
+						.newest-list {
+							margin-bottom: 0.938vw;
+							span {
+								font-family: 'NotoSansHans-Regular';
+								font-size: 0.729vw;
+								font-weight: normal;
+								font-stretch: normal;
+								letter-spacing: 0vw;
+							}
+							&:hover {
+								cursor: pointer;
+								span {
+									&:nth-child(1) {
+										text-decoration: underline;
+										color: #0065c3;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,199 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+i {
+	font-weight: 100;
+	font-style: normal;
+}
+ul,
+ol,
+li {
+	list-style-type: none;
+}
+a {
+	color: #666;
+	text-decoration: none;
+	outline: 0;
+}
+a:hover {
+	text-decoration: none;
+}
+#app {
+	width: 100%;
+	// overflow-y: hidden;
+	// overflow-x:scroll;
+	&::-webkit-scrollbar {
+		width: 0.5vw;
+		height: 2.76vw;
+		z-index: 9999;
+	}
+	&::-webkit-scrollbar-track {
+		width: 0.417vw;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #a1dad2;
+		border-radius: 0.208vw;
+	}
+	// 人员检索
+	@import url('../less/personnelretrieve/index.less');
+	// 项目检索
+	@import url('../less/projectretrieval/index.less');
+	// 数据检索
+	@import url('../less/dataretrieval/index.less');
+	// 文档检索
+	@import url('../less/docretrieval/index.less');
+	// 综合评估
+	@import url('../less/comprehensive/index.less');
+	// 综合风险评估
+	@import url('../less/comprehensive/risk/index.less');
+	// 营院安防情况评估
+	@import url('../less/comprehensive/safety/index.less');
+	// 外协人员综合评估
+	@import url('../less/comprehensive/ForeignStaff/index.less');
+	// 内部人员日常行为评估
+	@import url('../less/comprehensive/insiderDailyActs/index.less');
+	// 营院日常管理及保障评估
+	@import url('../less/comprehensive/PoliceYardManage/index.less');
+	// 表格
+	/deep/.el-table {
+		font-size: 0.729vw;
+		.el-table__body-wrapper.is-scrolling-none {
+			&::-webkit-scrollbar {
+				width: 0.5vw;
+				height: 2.76vw;
+				z-index: 9999;
+			}
+			&::-webkit-scrollbar-track {
+				width: 0.417vw;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: #a1dad2;
+				border-radius: 0.208vw;
+			}
+		}
+		.el-table__header {
+			thead {
+				tr {
+					letter-spacing: 0vw;
+					th {
+						background-color: #e7f6f4;
+						height: 1.667vw;
+						padding-top: 0;
+						padding-bottom: 0;
+					}
+					.cell {
+						height: 0.730vw;
+						line-height: 0.730vw;
+						font-weight: normal;
+						font-stretch: normal;
+						font-family: 'NotoSansHans-Bold';
+						font-size: 0.729vw;
+						color: #0f5d53;
+						text-align: center;
+					}
+				}
+			}
+		}
+		.el-table__row {
+			td {
+				padding-top: 0;
+				padding-bottom: 0;
+				height: 2.083vw;
+				line-height: 2.083vw;
+			}
+		}
+		.el-table__row--striped {
+			td {
+				background-color: #f5faf9;
+				padding-top: 0;
+				padding-bottom: 0;
+				height: 2.083vw;
+				line-height: 2.083vw;
+			}
+		}
+		.el-table__body-wrapper.is-scrolling-none .cell {
+			text-align: center;
+			color: #1a1a1a;
+		}
+	}
+	// 输入框
+	/deep/.el-input.el-input--suffix {
+		width: 13.958vw;
+		height: 1.667vw;
+		background-color: #ffffff;
+		border: solid 0.052vw #009985;
+		border-radius: 0;
+		line-height: 1.667vw;
+		display: flex;
+		align-items: center;
+		input {
+			border-radius: 0;
+			height: 0.84vw;
+			line-height: 0.84vw;
+			border: none;
+			&::placeholder {
+				font-family: 'NotoSansHans-Regular';
+				font-size: 0.72vw;
+				font-weight: normal;
+				font-stretch: normal;
+				letter-spacing: 0vw;
+				color: #666666;
+			}
+		}
+		.el-input__suffix {
+			.el-input__icon.el-icon-search {
+				line-height: 0;
+				font-size: 0.833vw;
+				color: #009985;
+				display: block;
+				height: 1.667vw;
+			}
+		}
+	}
+	// 树
+	/deep/.el-tree.el-tree--highlight-current {
+		z-index: 2;
+		font-family: 'NotoSansHans-Regular';
+		font-size: 0.729vw;
+		font-weight: normal;
+		font-stretch: normal;
+		letter-spacing: 0vw;
+		color: #1a1a1a;
+	}
+	/deep/.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
+		background-color: #e6f5f3;
+		color: #009985;
+	}
+	/deep/.el-tree-node__expand-icon {
+		color: #00806f;
+	}
+	/deep/.is-leaf.el-tree-node__expand-icon.el-icon-caret-right {
+		color: transparent;
+	}
+
+	// 分页
+	/deep/.el-pagination {
+		.btn-prev,
+		.btn-next,
+		.number {
+			font-family: 'NotoSansHans-Regular';
+			font-size: 0.729vw;
+			font-weight: normal;
+			font-stretch: normal;
+			letter-spacing: 0vw;
+			border: solid 0.052vw #a1dad2;
+		}
+		.number.active {
+			background-color: #009985;
+		}
+	}
+}

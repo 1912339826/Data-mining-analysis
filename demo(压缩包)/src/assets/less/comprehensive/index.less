@@ -1,0 +1,89 @@
+// 综合评估
+.comprehensiveIndex {
+	background-color: #f5faf9;
+	display: flex;
+	.comprehensiveIndexLeft {
+		width: 15.75vw;
+		height: 100%;
+		.datalist {
+			height: 50vw;
+			// height: 100%;
+			background-color: #ffffff;
+			border-right: 0.052vw solid #dddddd;
+			padding-top: 0.99vw;
+			div {
+				padding-left: 1.667vw;
+				display: flex;
+				align-items: center;
+				height: 1.458vw;
+				margin-top: 0.052vw;
+				&:hover {
+					cursor: pointer;
+					text-decoration: underline #009985;
+				}
+				img {
+					margin-right: 0.365vw;
+					width: 0.417vw;
+					height: 0.417vw;
+				}
+				span {
+					font-family: 'NotoSansHans-Regular';
+					font-size: 0.729vw;
+					font-weight: normal;
+					font-stretch: normal;
+					letter-spacing: 0vw;
+					color: #1a1a1a;
+				}
+			}
+			.active {
+				background-color: #e6f5f3;
+				span {
+					color: #009985;
+				}
+			}
+		}
+	}
+	.comprehensiveIndexRight {
+		padding-top: 1.25vw;
+		.time {
+			font-family: 'NotoSansHans-Bold';
+			font-size: 0.938vw;
+			font-weight: normal;
+			font-stretch: normal;
+			letter-spacing: 0vw;
+			color: #00806f;
+			padding-left: 1.25vw;
+		}
+		.content {
+			margin-top: 1.25vw;
+			width: 48.438vw;
+			height: 13.75vw;
+			display: flex;
+			flex-wrap: wrap;
+			.list {
+				&:hover {
+					cursor: pointer;
+				}
+				display: flex;
+				align-items: center;
+				padding-left: 1.667vw;
+				padding-right: 1.719vw;
+				width: 14.896vw;
+				height: 6.25vw;
+				background-color: #dcecef;
+				border-radius: 0.417vw;
+				margin-left: 1.25vw;
+				font-family: 'NotoSansHans-Regular';
+				font-size: 1.25vw;
+				font-weight: normal;
+				font-stretch: normal;
+				letter-spacing: 0vw;
+				img {
+					width: 2.917vw;
+					height: 2.917vw;
+					margin-right: 1.198vw;
+				}
+			}
+		}
+	}
+}

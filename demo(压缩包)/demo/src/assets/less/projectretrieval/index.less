@@ -1,0 +1,355 @@
+// 项目检索
+.projectretrievalIndex {
+	background-color: #f5faf9;
+	display: flex;
+	.searching {
+		width: 15.75vw;
+		.search {
+			width: 15.75vw;
+			border: 0.052vw solid #dddddd;
+			height: 3.125vw;
+			background-color: #ffffff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.datalist {
+			height: 50vw;
+			background-color: #ffffff;
+			border-right: 0.052vw solid #dddddd;
+			padding-top: 0.99vw;
+			div {
+				padding-left: 1.667vw;
+				display: flex;
+				align-items: center;
+				height: 1.458vw;
+				margin-top: 0.052vw;
+				&:hover {
+					cursor: pointer;
+					text-decoration: underline #009985;
+				}
+				img {
+					margin-right: 0.365vw;
+					width: 0.417vw;
+					height: 0.417vw;
+				}
+				span {
+					font-family: 'NotoSansHans-Regular';
+					font-size: 0.729vw;
+					font-weight: normal;
+					font-stretch: normal;
+					letter-spacing: 0vw;
+					color: #1a1a1a;
+				}
+			}
+			.active {
+				background-color: #e6f5f3;
+				span {
+					color: #009985;
+				}
+			}
+		}
+	}
+	.content {
+		padding: 0.833vw;
+		.box {
+			margin-bottom: 0.833vw;
+			background-color: #ffffff;
+			display: flex;
+			justify-content: space-between;
+			padding-top: 0.781vw;
+			padding-left: 1.302vw;
+			&:nth-child(1) {
+				width: 82.708vw;
+				height: 16.667vw;
+				background-color: #ffffff;
+				box-shadow: 0vw 0.104vw 0.313vw 0vw rgba(0, 0, 0, 0.1);
+				border-radius: 0.417vw;
+				padding-right: 1.563vw;
+				.survey,
+				.earlywarning {
+					nav {
+						height: 0.938vw;
+						font-family: 'NotoSansHans-Bold';
+						font-size: 0.938vw;
+						font-weight: normal;
+						font-stretch: normal;
+						letter-spacing: 0vw;
+						color: #00806f;
+					}
+					section {
+						table {
+							margin-top: 1.302vw;
+							margin-left: 0.365vw;
+							border-collapse: collapse;
+							border: solid 0.052vw #a1dad2;
+							tr {
+								.name {
+									font-family: 'NotoSansHans-Bold';
+									font-size: 0.729vw;
+									font-weight: normal;
+									font-stretch: normal;
+									letter-spacing: 0vw;
+									color: #009985;
+									width: 32.083vw;
+									height: 2.083vw;
+								}
+								th {
+									font-family: 'NotoSansHans-Bold';
+									font-size: 0.729vw;
+									font-weight: normal;
+									font-stretch: normal;
+									letter-spacing: 0vw;
+									color: #0f5d53;
+									width: 6.25vw;
+									height: 2.083vw;
+									background-color: #e7f6f4;
+								}
+								td {
+									padding-left: 0.885vw;
+									font-family: 'NotoSansHans-Regular';
+									font-size: 0.729vw;
+									font-weight: normal;
+									font-stretch: normal;
+									line-height: 1.25vw;
+									letter-spacing: 0vw;
+									color: #1a1a1a;
+									width: 12.917vw;
+									height: 2.083vw;
+								}
+								.txt {
+									padding: 0.781vw 2.813vw 0.833vw 0.885vw;
+									div {
+										height: 2.2vw;
+										overflow: hidden;
+										position: relative;
+										span {
+											position: absolute;
+											right: 0;
+											bottom: 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.earlywarning {
+					section {
+						fieldset {
+							background-color: #ffffff;
+							border-radius: 0.417vw;
+							border: solid 0.104vw #97ccc5;
+							padding-left: 1.058vw;
+							legend {
+								margin-left: 0.6vw;
+								padding-left: 0.4vw;
+								padding-right: 0.4vw;
+								font-family: 'NotoSansHans-Bold';
+								font-size: 0.833vw;
+								font-weight: normal;
+								font-stretch: normal;
+								letter-spacing: 0vw;
+								color: #009985;
+							}
+						}
+						.minor {
+							&:nth-child(2) {
+								margin-top: 1.302vw;
+							}
+							display: flex;
+							.schedule {
+								width: 16.771vw;
+								height: 5.729vw;
+							}
+							.expenditure {
+								margin-left: 2.083vw;
+								width: 19.115vw;
+								height: 5.729vw;
+							}
+							.schedule,
+							.expenditure {
+								section {
+									display: flex;
+									align-items: center;
+									height: 4vw;
+									justify-content: space-between;
+									padding-right: 2.396vw;
+									padding-left: 1vw;
+									.left {
+										span {
+											&:nth-child(1) {
+												font-family: 'Bahnschrift';
+												font-size: 2.5vw;
+												font-weight: normal;
+												font-stretch: normal;
+												letter-spacing: 0vw;
+												color: #009dff;
+											}
+											&:nth-child(2) {
+												font-family: 'NotoSansHans-Regular';
+												font-size: 0.729vw;
+												font-weight: normal;
+												font-stretch: normal;
+												letter-spacing: 0vw;
+												color: #009dff;
+											}
+										}
+										img {
+											width: 0.625vw;
+											height: 0.885vw;
+										}
+									}
+									.right {
+										display: flex;
+										flex-direction: column;
+										justify-content: space-between;
+										height: 2.812vw;
+										div {
+											span {
+												&:nth-child(1) {
+													font-family: 'NotoSansHans-Regular';
+													font-size: 0.729vw;
+													font-weight: normal;
+													font-stretch: normal;
+													letter-spacing: 0vw;
+													color: #1a1a1a;
+												}
+												&:nth-child(2) {
+													font-family: 'NotoSansHans-Regular';
+													font-size: 0.729vw;
+													font-weight: normal;
+													font-stretch: normal;
+													letter-spacing: 0vw;
+													color: #009dff;
+												}
+											}
+										}
+									}
+								}
+							}
+
+							.units {
+								width: 16.771vw;
+								height: 3.594vw;
+								section {
+									height: 1.823vw;
+									display: flex;
+									align-items: center;
+									margin-top: 0.365vw;
+									padding-left: 1vw;
+									.left {
+										img {
+											width: 1.094vw;
+											height: 1.198vw;
+											margin-right: 0.573vw;
+											&:last-child {
+												margin-right: 0;
+											}
+										}
+									}
+									.right {
+										margin-left: 1.979vw;
+										span {
+											&:nth-child(1) {
+												font-family: 'Bahnschrift';
+												font-size: 2.5vw;
+												font-weight: normal;
+												font-stretch: normal;
+												letter-spacing: 0vw;
+												color: #ff4e00;
+											}
+											&:nth-child(2) {
+												font-family: 'NotoSansHans-Regular';
+												font-size: 0.729vw;
+												font-weight: normal;
+												font-stretch: normal;
+												letter-spacing: 0vw;
+												color: #ff4e00;
+											}
+										}
+									}
+								}
+							}
+							.rate {
+								margin-left: 2.083vw;
+								width: 19.115vw;
+								height: 3.594vw;
+								section {
+									height: 1.823vw;
+									display: flex;
+									align-items: center;
+									margin-top: 0.365vw;
+									padding-left: 1vw;
+									.left {
+										img {
+											margin-right: 0.417vw;
+											width: 0.833vw;
+											height: 1.302vw;
+											&:last-child {
+												margin-right: 0;
+											}
+										}
+									}
+									.right {
+										margin-left: 1.302vw;
+										&:nth-child(1) {
+											font-family: 'Bahnschrift';
+											font-size: 2.083vw;
+											font-weight: normal;
+											font-stretch: normal;
+											letter-spacing: 0vw;
+											color: #11b99a;
+										}
+										&:nth-child(2) {
+											font-family: 'NotoSansHans-Regular';
+											font-size: 0.729vw;
+											font-weight: normal;
+											font-stretch: normal;
+											letter-spacing: 0vw;
+											color: #11b99a;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&:nth-child(2) {
+				width: 82.708vw;
+				height: 22.188vw;
+				background-color: #ffffff;
+				box-shadow: 0vw 0.104vw 0.313vw 0vw rgba(0, 0, 0, 0.1);
+				border-radius: 0.417vw;
+				.schedule {
+					nav {
+						font-family: 'NotoSansHans-Bold';
+						font-size: 0.938vw;
+						font-weight: normal;
+						font-stretch: normal;
+						letter-spacing: 0vw;
+						color: #00806f;
+					}
+				}
+			}
+			&:nth-child(3) {
+				width: 82.708vw;
+				height: 27.083vw;
+				background-color: #ffffff;
+				box-shadow: 0vw 0.104vw 0.313vw 0vw rgba(0, 0, 0, 0.1);
+				border-radius: 0.417vw;
+				.atlas {
+					nav {
+						font-family: 'NotoSansHans-Bold';
+						font-size: 0.938vw;
+						font-weight: normal;
+						font-stretch: normal;
+						letter-spacing: 0vw;
+						color: #00806f;
+					}
+				}
+			}
+		}
+	}
+}
